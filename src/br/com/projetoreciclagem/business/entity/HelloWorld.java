@@ -1,4 +1,4 @@
-package br.com.projetobase.business.entity;
+package br.com.projetoreciclagem.business.entity;
 
 import java.io.Serializable;
 

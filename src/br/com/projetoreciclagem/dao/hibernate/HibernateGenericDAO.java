@@ -1,11 +1,11 @@
-package br.com.projetobase.dao.hibernate;
+package br.com.projetoreciclagem.dao.hibernate;
 
 import java.util.List;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.classic.Session;
 
-import br.com.projetobase.dao.GenericDAO;
+import br.com.projetorecilcagem.dao.GenericDAO;
 
 public class HibernateGenericDAO<T> implements GenericDAO<T> {
 	

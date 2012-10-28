@@ -1,4 +1,4 @@
-package br.com.projetobase.dao;
+package br.com.projetorecilcagem.dao;
 
 import java.util.List;
 

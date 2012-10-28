@@ -1,10 +1,10 @@
-package br.com.projetobase.controller;
+package br.com.projetoreciclagem.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import br.com.caelum.vraptor.Resource;
-import br.com.projetobase.business.entity.HelloWorld;
-import br.com.projetobase.dao.HelloWorldDAO;
+import br.com.projetoreciclagem.business.entity.HelloWorld;
+import br.com.projetorecilcagem.dao.HelloWorldDAO;
 
 @Resource
 public class InicioController {
