@@ -30,7 +30,7 @@
 	
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="packagesToScan" value="br.com.projetobase.business.entity"/>
+		<property name="packagesToScan" value="br.com.projetoreciclagem.business.entity"/>
       	<property name="namingStrategy">
         	<bean class="org.hibernate.cfg.DefaultComponentSafeNamingStrategy" />
 		</property>    
@@ -58,6 +58,8 @@
     
     <tx:annotation-driven transaction-manager="transactionManager" />
     <context:annotation-config />
-    <context:component-scan base-package="br.com.projetobase.dao" />
+    <context:component-scan base-package="br.com.projetoreciclagem.dao" />
+    <context:component-scan base-package="br.com.projetoreciclagem.service" />
+    
 		
 </beans>

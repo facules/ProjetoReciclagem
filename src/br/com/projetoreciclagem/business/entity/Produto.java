@@ -31,6 +31,14 @@ public class Produto implements Serializable {
 		this.codigo = codigo;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getProduto() {
 		return produto;
 	}

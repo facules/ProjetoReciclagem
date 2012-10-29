@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.classic.Session;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import br.com.projetorecilcagem.dao.GenericDAO;
 
@@ -15,6 +16,7 @@ public class HibernateGenericDAO<T> implements GenericDAO<T> {
 		this.sessionFactory=sessionfactory;
 		this.classe= classe;
 	}
+
 
 	private Session getSession(){
 		return sessionFactory.getCurrentSession();

@@ -1,6 +1,8 @@
 package br.com.projetoreciclagem.service;
 
-public interface ProdutoService {
+import br.com.projetoreciclagem.business.entity.Produto;
+
+public interface ProdutoService extends GenericService<Produto> {
 
 	
 }

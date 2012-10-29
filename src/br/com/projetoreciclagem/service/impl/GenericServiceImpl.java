@@ -2,44 +2,49 @@ package br.com.projetoreciclagem.service.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import br.com.projetoreciclagem.business.entity.Produto;
 import br.com.projetoreciclagem.service.GenericService;
 import br.com.projetorecilcagem.dao.GenericDAO;
 
-public class GenericServiceImpl implements GenericService<Produto>{
+@Service
+public class GenericServiceImpl<T> implements GenericService<T>{
 
+	@Autowired
 	private GenericDAO dao;
 	
 	@Override
-	public void adicionar(Produto entidade) throws Exception {
+	public void adicionar(T entidade) throws Exception {
 		// TODO Auto-generated method stub
 		dao.adicionar(entidade);
 	}
 
 	@Override
-	public void alterar(Produto entidade) throws Exception {
+	public void alterar(T  entidade) throws Exception {
 		// TODO Auto-generated method stub
 		dao.alterar(entidade);
 	}
 
 	@Override
-	public void deletar(Produto entidade) throws Exception {
+	public void deletar(T  entidade) throws Exception {
 		// TODO Auto-generated method stub
 		dao.deletar(entidade);
 		
 	}
 
 	@Override
-	public List<Produto> list() {
+	public List<T> list() {
 		// TODO Auto-generated method stub
 	
 		return 	dao.list();
 	}
 
 	@Override
-	public Produto buscar(long id) {
+	public T buscar(long id) {
 		// TODO Auto-generated method stub
-		return (Produto) dao.buscar(id);
+		return (T) dao.buscar(id);
 	}
 
 }

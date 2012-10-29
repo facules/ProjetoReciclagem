@@ -11,9 +11,8 @@ import br.com.projetorecilcagem.dao.ProdutoDAO;
 public class HibernateProdutoDAO extends HibernateGenericDAO<Produto> implements ProdutoDAO {
 
 	@Autowired
-	public HibernateProdutoDAO(Class<Produto> classe,
-			SessionFactory sessionfactory) {
-		super(classe, sessionfactory);
+	public HibernateProdutoDAO(	SessionFactory sessionfactory) {
+		super(Produto.class, sessionfactory);
 		// TODO Auto-generated constructor stub
 	}
 
