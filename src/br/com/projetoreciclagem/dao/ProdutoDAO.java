@@ -1,4 +1,4 @@
-package br.com.projetorecilcagem.dao;
+package br.com.projetoreciclagem.dao;
 
 import br.com.projetoreciclagem.business.entity.Produto;
 

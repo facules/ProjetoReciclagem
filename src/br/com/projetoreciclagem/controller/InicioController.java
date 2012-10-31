@@ -5,8 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import br.com.caelum.vraptor.Resource;
 import br.com.projetoreciclagem.business.entity.HelloWorld;
 import br.com.projetoreciclagem.business.entity.Produto;
+import br.com.projetoreciclagem.dao.HelloWorldDAO;
 import br.com.projetoreciclagem.service.ProdutoService;
-import br.com.projetorecilcagem.dao.HelloWorldDAO;
 
 @Resource
 public class InicioController {

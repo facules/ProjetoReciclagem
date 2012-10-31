@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.com.projetoreciclagem.business.entity.HelloWorld;
-import br.com.projetorecilcagem.dao.HelloWorldDAO;
+import br.com.projetoreciclagem.dao.HelloWorldDAO;
 
 @Repository
 public class HibernateHelloWorldDAO implements HelloWorldDAO{

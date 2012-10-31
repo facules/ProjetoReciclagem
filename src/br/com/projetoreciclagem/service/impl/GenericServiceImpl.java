@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.projetoreciclagem.business.entity.Produto;
+import br.com.projetoreciclagem.dao.GenericDAO;
 import br.com.projetoreciclagem.service.GenericService;
-import br.com.projetorecilcagem.dao.GenericDAO;
 
 @Service
 public class GenericServiceImpl<T> implements GenericService<T>{

@@ -7,7 +7,7 @@ import org.hibernate.classic.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.projetorecilcagem.dao.GenericDAO;
+import br.com.projetoreciclagem.dao.GenericDAO;
 
 public class HibernateGenericDAO<T> implements GenericDAO<T> {
 	
