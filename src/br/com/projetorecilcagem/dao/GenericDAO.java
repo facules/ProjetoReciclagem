@@ -9,6 +9,4 @@ public interface GenericDAO<T> {
 	void deletar(T entidade) throws Exception;
 	List<T> list();
 	T buscar(final long id);
-	
-	
 }
